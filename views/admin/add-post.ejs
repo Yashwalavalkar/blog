@@ -1,0 +1,22 @@
+<a href="/dashboard">&larr; Back</a>
+<div class="admin-title">
+    <h2>Add New Post</h2>
+</div>
+
+<form action="/add_post" method="post">
+    <div class="row">
+        <div class="col-sm-6 col-6">
+            <input type="text" class="form-control" placeholder="Post Title" name="title" required>
+        </div>
+        <div class="col-sm-6 col-6">
+            <input type="text" class="form-control" placeholder="Enter post link" name="link">
+        </div>
+    </div>
+    <label for="title"><b>Title</b></label>
+    
+    <label for="body"><b>Content</b></label>
+    <textarea name="body" class="form-control" cols="50" rows="10" required></textarea>
+
+    <input type="submit" value="Add" class="btn" >
+</form>
+

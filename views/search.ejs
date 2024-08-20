@@ -1,0 +1,25 @@
+<div class="author">
+    <h1 class="author_heading">Search Result</h1>
+</div>
+
+<section class="articles">
+    <div class="row">
+        <% data.forEach(post => { %>
+        <div class="col-sm-7">
+          <li type="none" class="">
+            <a href="/post/<%- post._id %>" class="">
+              <span><%- post.title %></span>
+            </a>
+          </li>
+        </div>
+        <hr>
+        <div class="col-sm-5 d-flex justify-content-end">
+          <li type="none" class="">
+            <a href="#" class="text-dark">
+              <span><%- post.createdAt.toDateString() %></span>
+            </a>
+          </li>
+        </div>
+        <% }) %>
+      </div>
+</section>
